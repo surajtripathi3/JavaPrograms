@@ -1,0 +1,801 @@
+class Arraydemo
+{
+
+/* 1 maximum */ 
+static int max(int x[])
+{
+System.out.println("Maximum");
+int m;
+m=x[0];
+for(int i=0;i<x.length;i++)
+{
+
+if (m<x[i])
+{
+
+m=x[i ];
+
+}
+
+}
+return m;
+
+
+}
+/* 2 Maximum */
+static int max1(int x[][])
+{
+System.out.println("Maximum in Array Of Arrays::");
+
+int m;
+m=x[0][0];
+for(int i=0;i<3;i++)
+for(int j=0;j<3;j++)
+{
+if(m<x[i][j])
+{
+
+m=x[i][j];
+
+
+}
+
+}
+return m;
+
+}
+
+
+
+/* 3 Minimum */
+static int min1(int x[][])
+{
+System.out.println("Minimum::");
+int m;
+m=x[0][0];
+for(int i=0;i<3;i++)
+for(int j=0;j<3;j++)
+{
+if(m>x[i][j])
+{
+
+m=x[i][j];
+
+
+}
+
+}
+return m;
+
+}
+
+/* 4 Minimum */
+static int min(int x[])
+{
+System.out.println("Minimum in Array of Arrays::");
+int m;
+m=x[0];
+for(int i=0;i<x.length;i++)
+{
+
+if (m>x[i])
+{
+
+m=x[i];
+
+}
+
+}
+return m;
+
+
+}
+
+
+
+/* 5 Sorting */
+static void sort(int x[])
+{
+
+System.out.println("Sorting:");
+int t;
+for(int i=0;i<4;i++)
+for(int j=0;j<4;j++)
+{
+
+if(x[i]>x[j])
+{t=x[i];
+x[i]=x[j];
+x[j]=t;
+}
+
+}
+for (int i=0;i<4;i++)
+{
+
+System.out.print(x[i]);
+System.out.print(" ");
+
+}
+System.out.println("\n");
+for(int i=3;i>=0;i--)
+{
+System.out.print(x[i]);
+System.out.print(" ");
+}
+System.out.println("\n");
+}
+
+
+
+
+/* 6 Sorting */
+static void sort1(int x[][])
+{
+
+System.out.println("Sorting of Array of Arrays:");
+for(int i=0;i<3;i++)
+{
+for(int j=0;j<3;j++)
+{
+for(int k=0;k<3;k++)
+{
+for(int l=0;l<3;l++)
+if(x[i][j]>x[k][l])
+{
+int t=x[i][j];
+x[i][j]=x[k][l];
+x[k][l]=t;
+
+
+}
+
+}}}
+for(int i=0;i<3;i++)
+{for(int j=0;j<3;j++)
+{System.out.print(x[i][j]);
+System.out.print(" ");}
+System.out.println("\n");
+}
+
+
+
+
+}
+
+
+
+
+/* 7 Triangle */
+static int triangleamax(int x[][])
+{
+
+System.out.println("Triangle A Max:");
+int m=x[0][0];
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{
+if(m<x[i][j])
+{
+
+m=x[i][j];
+}
+
+}
+
+for(int j=2;j<3;j++)
+for(int i=0;i<3;i++)
+{
+if(m<x[i][j])
+{
+m=x[i][j];
+
+}
+
+
+}
+
+
+for(int i=0;i<3;i++)
+if(m<x[i][i])
+{
+
+m=x[i][i];
+}
+
+return m;
+
+}
+
+
+
+
+/* 8 Triangle */
+static int triangleamin(int x[][])
+{
+
+System.out.println("Triangle A Minimum");
+int m=x[0][0];
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{
+if(m>x[i][j])
+{
+
+m=x[i][j];
+}
+
+}
+
+for(int j=2;j<3;j++)
+for(int i=0;i<3;i++)
+{
+if(m>x[i][j])
+{
+m=x[i][j];
+
+}
+
+
+}
+
+
+for(int i=0;i<3;i++)
+if(m>x[i][i])
+{
+
+m=x[i][i];
+}
+
+return m;
+
+}
+
+
+
+
+/* 9 Triangle */
+static int triangleasum(int x[][])
+{
+System.out.println("Triangle A sum");
+int m=0;
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{
+
+m+=x[i][j];
+
+}
+
+for(int i=2;i<3;i++)
+for(int j=1;j<3;j++)
+{
+
+m+=x[j][i];
+}
+
+for(int i=1;i<2;i++)
+{
+
+m+=x[i][i];
+}
+
+return m;
+}
+
+
+
+
+
+/* 10 Triangle */
+static int trianglebmax(int x[][])
+{
+
+
+System.out.println("Triangle B max");
+int m=x[0][0];
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{
+if(m<x[j][i])
+{
+
+m=x[j][i];
+}
+
+}
+
+for(int j=2;j<3;j++)
+for(int i=0;i<3;i++)
+{
+if(m<x[j][i])
+{
+m=x[j][i];
+
+}
+
+
+}
+
+
+for(int i=0;i<3;i++)
+if(m<x[i][i])
+{
+
+m=x[i][i];
+}
+
+return m;
+
+}
+
+
+
+
+
+/* 11 Triangle */
+static int trianglebmin(int x[][])
+{
+
+System.out.println("Triangle B Minimum" );
+int m=x[0][0];
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{
+if(m>x[j][i])
+{
+
+m=x[j][i];
+}
+
+}
+
+for(int j=2;j<3;j++)
+for(int i=0;i<3;i++)
+{
+if(m>x[j][i])
+{
+m=x[j][i];
+
+}
+
+
+}
+
+
+for(int i=0;i<3;i++)
+if(m>x[i][i])
+{
+
+m=x[i][i];
+}
+
+return m;
+
+}
+
+
+
+
+
+/* 12 Triangle */
+static int trianglebsum(int x[][])
+{
+System.out.println("Triangle B sum");
+int m=0;
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{
+
+m+=x[j][i];
+
+}
+
+for(int i=2;i<3;i++)
+for(int j=1;j<3;j++)
+{
+
+m+=x[i][j];
+}
+
+for(int i=1;i<2;i++)
+{
+
+m+=x[i][i];
+}
+
+return m;
+}
+
+
+
+
+
+
+/* 13 Merge sort */
+static void mergesort(int x[],int y[])
+{
+
+System.out.println("Merge Sort:::");
+int z[];
+int m=x.length+y.length;
+z=new int [m];
+
+for(int i=0;i<x.length;i++)
+{
+z[i]=x[i];
+
+}
+
+for(int j=0;j<y.length;j++)
+{int i=x.length;
+z[i+j]=y[j];
+
+}
+
+sort(z);
+
+} 
+
+
+
+
+/* 14 Matrix add */
+static void matrixadd(int x[][],int y[][])
+{
+
+
+System.out.println("Matrix ADD");
+int z[][];
+z=new int[3][3];
+
+for(int i=0;i<3;i++)
+for(int j=0;j<3;j++)
+{
+
+z[i][j]=x[i][j]+y[i][j];
+
+}
+
+/*for(int i=0;i<3;i++)
+{System.out.println("\n");
+for(int j=0;j<3;j++)
+{System.out.print(" ");
+System.out.print(x[i][j]);
+}
+}
+
+for(int i=0;i<3;i++)
+{System.out.println("\n");
+for(int j=0;j<3;j++)
+{System.out.print(" ");
+System.out.print(y[i][j]);
+}
+}
+*/
+
+for(int i=0;i<3;i++)
+{System.out.println("\n");
+for(int j=0;j<3;j++)
+{System.out.print(x[i][j]);
+System.out.print(" ");}
+System.out.print("   ");
+for(int k=0;k<3;k++)
+{System.out.print(y[i][k]);
+System.out.print(" ");}
+}
+
+for(int i=0;i<3;i++)
+{System.out.println("\n");
+for(int j=0;j<3;j++)
+{System.out.print(" ");
+System.out.print(z[i][j]);
+}
+}
+System.out.println("\n");
+}
+
+
+
+
+/* 15 Union */
+static void union(int x[],int y[])
+{
+System.out.println("Union");
+
+int z[];
+int k=0;
+int m=x.length+y.length;
+z=new int[m];
+for(int i=0;i<x.length;i++)
+{for(int j=0;j<m;j++)
+{if(x[i]==z[j])
+break;
+
+else
+z[k]=x[i];
+k++;
+break;
+}
+}
+for(int i=0;i<y.length;i++)
+{for(int j=0;j<m;j++)
+{if(y[i]==z[j])
+break;
+else
+z[k]=y[i];
+k++;
+break;
+}
+}
+for(int i=0;i<k;i++)
+System.out.println(z[i]);
+}
+
+
+/* 16 Matrixm  */
+static void matrixmultiply(int x[][],int y[][])
+{
+System.out.println("Matrix Multiply");
+int z[][];
+z=new int[3][3];
+for(int i=0;i<3;i++)
+for(int j=0;j<3;j++)
+for(int k=0;k<3;k++)
+{
+
+
+z[i][j]+=x[i][j]*y[k][j];
+
+
+}
+
+for(int i=0;i<3;i++)
+{System.out.print("\n");
+{for(int j=0;j<3;j++)
+{System.out.print(z[i][j]);
+System.out.print(" ");
+}
+}
+}
+
+System.out.println("\n");
+}
+
+/* 17 intersection */
+static void intersection(int x[],int y[])
+{
+System.out.println("Intersection");
+int z[];
+int m=x.length+y.length;
+int b=0;
+z=new int[m];
+for(int i=0;i<2;i++)
+{for(int j=0;j<2;j++)
+if(x[i]==y[j])
+for(int k=0;k<m;k++)
+if (z[k]==y[j])
+break;
+else 
+z[b]=y[j];
+b++;
+
+}
+
+for(int i=0;i<b;i++)
+System.out.println(z[i]);
+}
+
+
+
+
+
+
+/* 18 Matrix s  */ 
+static void matrixsum(int x[][])
+{
+System.out.println("Matrix Sum");
+int []s,c;
+s=new int [3];
+c=new int [5];
+for(int i=0;i<3;i++)
+for(int j=0;j<3;j++)
+{
+
+s[i]+=x[i][j];
+}
+int n=0;
+for(int k=1;k<4;k++)
+{for(int j=0;j<3;j++)
+c[k]+=x[j][n];
+n++;}
+for(int i=4;i<5;i++)
+{
+
+for(int j=0;j<3;j++)
+c[i]+=x[j][j];
+}
+int p=2;
+for(int i=0;i<1;i++)
+for(int j=0;j<3;j++)
+{c[i]+=x[j][p];
+p--;}
+
+
+
+int k=0;
+for(int i=0;i<3;i++)
+
+{
+System.out.println("\n");
+for(int j=0;j<3;j++)
+{System.out.print(" ");
+System.out.print(" "+x[i][j]);}
+System.out.print(" ");
+System.out.print(s[k]);
+k++;
+}
+System.out.println("\n");
+for(int i=0;i<5;i++)
+{
+System.out.print(c[i]);
+System.out.print(" ");
+}}
+
+
+
+
+
+/* Hey JVM Start From Here...It's My Order */
+public static void main(String... s)
+{
+
+int m=max(new int[]{23,5,87,6});
+System.out.println(m);
+System.out.print("\n");
+
+
+
+int m1=max1(new int[][]{
+{1,6,4},
+{7,8,6},
+{4,7,8}
+});
+System.out.println(m1);
+System.out.print("\n");
+
+int m2=min1(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+System.out.println(m2);
+System.out.print("\n");
+
+
+
+int m3=min(new int[]{23,5,87,6});
+System.out.println(m3);
+
+sort(new int[]{23,5,87,6});
+
+sort1(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+
+int r=triangleamax(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+System.out.println(" ");
+System.out.println(r);
+System.out.print("\n");
+
+int r1=triangleamin(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+System.out.println(" ");
+System.out.println(r1);
+System.out.print("\n");
+
+int s1=triangleasum(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+
+System.out.println(" ");
+System.out.println(s1);
+System.out.print("\n");
+
+int r3=trianglebmax(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+System.out.println(" ");
+System.out.println(r3);
+System.out.print("\n");
+
+int r4=trianglebmin(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+System.out.println(" ");
+System.out.println(r4);
+
+System.out.print("\n");
+
+int s2=trianglebsum(new int[][]{
+{10,30,2},
+{34,8,7},
+{5,9,7}
+});
+
+
+System.out.println(" ");
+System.out.println(s2);
+System.out.print("\n");
+
+mergesort(new int[]{10,3},new int[]{5,6});
+
+matrixadd(new int[][]{
+
+{2,4,5},
+{5,7,8},
+{4,7,8}
+
+},new int[][]{
+
+{4,5,6},
+{9,6,7},
+{8,5,6}
+
+
+});
+
+
+
+union(new int[]{6,6},new int[]{6,6});
+
+
+
+matrixmultiply(new int[][]{
+
+{2,4,5},
+{5,7,8},
+{4,7,8}
+
+},new int[][]{
+
+{4,5,6},
+{9,6,7},
+{8,5,6}
+
+
+});
+
+intersection(new int[]{2,1},new int[]{2,1});
+
+
+matrixsum(new int[][]{
+{10,30,3},
+{34,8,7},
+{5,9,7}
+});
+
+
+
+}}

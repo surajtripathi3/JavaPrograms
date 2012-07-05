@@ -1,0 +1,33 @@
+class Outer
+{
+
+int x=10;
+static int y=20;
+
+
+void  display(M m)
+{
+
+m.show();
+
+}
+
+public static void main(String... s)
+{
+
+
+Outer o=new Outer();
+o.display(new M()
+{
+
+ public void show()
+{
+
+System.out.println(y);
+
+}
+});
+
+}
+
+}

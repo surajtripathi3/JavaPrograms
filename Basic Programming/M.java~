@@ -1,0 +1,8 @@
+interface M
+{
+
+
+ void show();
+
+
+}

@@ -1,0 +1,36 @@
+class O
+{
+int x=1;
+static int y=22;
+
+void display(M m)
+{
+
+m.show();
+
+
+}
+
+public static void main(String... s)
+{
+
+O o=new O();
+o.display(
+
+new M()
+{
+
+
+public void show()
+{
+
+System.out.println(x);
+
+}
+
+}
+
+);
+
+}
+}

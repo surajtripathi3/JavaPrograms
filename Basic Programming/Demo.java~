@@ -1,0 +1,10 @@
+class Demo
+{
+
+public static void main(String... s)
+{int x=20;
+Demo d= new Demo();
+Runtime r=Runtime.getRuntime();
+System.out.println(r.totalMemory());
+System.out.println(r.freeMemory());
+}}
